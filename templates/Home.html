@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	body{
+	height: 1200px;
+}
+.borders
+{
+	border:1px solid black;
+}
+
+.menu-opt
+{
+	border: 0px solid;
+	margin-left: 30px;
+}
+.menu-bar
+{
+	border:1px solid red;
+	width: 100%;
+}
+
+.icon-img
+{
+	height: 100%;
+	width: 100px;
+}
+
+
+
+/*------------- body -----*/
+
+.img1
+{
+	width: auto;
+}
+
+
+.btn1
+{
+	cursor: pointer;
+	padding-top:10px;;
+	border-radius: 10px;
+	text-align: center;
+	color:white;
+	font-family: arial;
+	font-size: 20px;
+	background-color: #2A5BD7;
+	height:50px;
+	width: 100%;
+	border: 1px solid blue;
+
+}
+.btn1:hover
+{
+	background-color: blue;
+
+}
+
+input[type=text]
+{   width:500px;
+    height:100px
+	border-radius: 10px;
+	font-family: arail;
+}
+.input-url:focus
+{
+
+	border:2px solid #7591D7;
+	outline: none;
+}
+.input-url
+{
+    padding-left: 15px;
+   	width: 100%;
+	height: 60px;
+	font-size: 20px;
+}
+
+.customurl-box
+{
+    border-radius: 10px;
+    border:1px solid yellow;
+    margin-left:80px;
+    font-family: arail;
+    background:white;
+}
+
+.input-customurl
+{
+    padding-left:0;
+    border:1px solid transparent;
+}
+.short-url-btn
+{
+	margin-left: 10px;
+	width: 100%;
+	height: 60px;
+	border-radius: 10px;
+	background-color:#1B3987;
+	color: white;
+	font-family: arial;
+	font-size: 20px;
+}
+.short-url-btn:hover
+{
+	background-color: blue;
+	outline: none;
+}
+.url-output
+{
+    font-family: arial;
+    height:auto;
+    border-radius:10px;
+}
+
+.original-urloutput
+{
+    background:white;
+    border-radius:10px;
+    border:1px solid black;
+    padding: 15px 5px;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<img src="favicon.jpeg">-->
+	<title> Bitly | Custom URL Shortener, Link Management & Branded Links </title>
+	<!-- Bootstrap Files-->
+
+
+</head>
+<body>
+			<div class="container-fuild" style=" margin-top:50px; ">
+				<div class="container" >
+					<div class="row">
+						 <div class="col-md-7" >
+						 	<div class="row" style="margin-top:20%">
+						 		<h1><b>Create Click-Worthy Links</b></h1>
+						 		<h5>Build and protect your brand using powerful, recognizable short links.</h5>
+						 	</div>
+						 	<div class="row" style="margin-top: 30px;">
+						 		<div class="col-md-5" >
+						 			<div class="btn1">
+						 				Get Started for Free
+						 			</div>
+						 			<div >
+						 				<center><a href="#" style="text-decoration: none">Get a Quote</a></center>
+						 			</div>
+						 		</div>
+						 	</div>
+						 </div>
+                        <div><a href="{{ url }}">{{ finalencryptedurl }}</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fuild" style="margin-top: 30px; background-color: #0B1736;">
+
+                <div class="container">
+        <form action="/urlshortner">
+                    <div class="row" style="padding:20px 0px 20px 0px; ">
+						<center>
+						<div class="col-md-8">
+								<input type="text" name="link" placeholder="Paste your long url">
+                                <br>
+							<br>
+							    <input type="text" name="customurl" placeholder="custom url">
+						</div>
+							<br>
+							<br>
+						<div class="col-md-4">
+							<input type="submit" name="short-btn" value="Shorten">
+						</div>
+							</center>
+
+						<div class="col-md-8">
+							<label style="color:#818797;">
+								<br>
+								By clicking SHORTEN, you are agreeing to Bitly’s <a href="#">Terms of Service</a>  and <a href="#"> Privacy Policy</a>
+							</label>
+						</div>
+					</div>
+        </form>
+
+				</div>
+
+			</div>
+
+</body>
+</html>
+</body>
+</html>
